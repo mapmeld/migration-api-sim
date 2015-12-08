@@ -1,5 +1,4 @@
 var mongoose = require('mongoose');
-var mongoosePaginate = require('mongoose-paginate');
 
 var postSchema = mongoose.Schema({
   title: String,
@@ -16,6 +15,5 @@ var postSchema = mongoose.Schema({
   created_at: Date,
   updated_at: Date
 });
-postSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model('Post', postSchema);

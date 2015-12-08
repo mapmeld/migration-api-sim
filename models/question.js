@@ -1,5 +1,4 @@
 var mongoose = require('mongoose');
-var mongoosePaginate = require('mongoose-paginate');
 
 var questionSchema = mongoose.Schema({
   question: String,
@@ -9,6 +8,5 @@ var questionSchema = mongoose.Schema({
   created_at: Date,
   updated_at: Date
 });
-questionSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model('Question', questionSchema);
