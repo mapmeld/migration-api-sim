@@ -12,6 +12,7 @@ var postSchema = mongoose.Schema({
     media_url: String
   },
   question_ids: Array,
+  stages: [String],
   created_at: Date,
   updated_at: Date
 });

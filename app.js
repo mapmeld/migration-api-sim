@@ -37,6 +37,9 @@ app.post('/questions', function (req, res) {
   } else {
     q.tags = [];
   }
+  if (req.body.stage) {
+    q.stage = req.body.stage;
+  }
   q.created_at = new Date();
   q.updated_at = new Date();
 
@@ -66,6 +69,13 @@ app.post('/posts', function (req, res) {
   };
   if (req.body.question_id) {
     p.question_ids = [ req.body.question_id ];
+  } else {
+    p.question_ids = [];
+  }
+  if (req.body.stage) {
+    p.stages = [req.body.stage];
+  } else {
+    p.stages = [];
   }
   p.created_at = new Date();
   p.updated_at = new Date();

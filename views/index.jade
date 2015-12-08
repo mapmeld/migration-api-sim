@@ -25,6 +25,12 @@ html
         option(value="mai") Maithili
       label Tags
       input(type="text", name="tags")
+      label Stage
+      select(name="stage")
+        option pre-application
+        option applying
+        option work permit
+        option destination country
       input(type="submit", value="New Question")
 
     h4 Create Post
@@ -48,6 +54,12 @@ html
         option(value="") None
         for question in questions
           option(value=question._id) #{question.question}
+      label Stage
+      select(name="stage")
+        option pre-application
+        option applying
+        option work permit
+        option destination country
       label Language
       select(name="language")
         option(value="en") English
