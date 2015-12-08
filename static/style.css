@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  font-size: 11pt;
+}
+
+form input, form select, form textarea {
+  display: block;
+  margin-bottom: 12px;
+}
+
+li {
+  margin: 8px;
+}
+
+label {
+  font-size: 120%;
+}
+
+select {
+  border: none;
+}
+
+form {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #eee;
+}

@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Migration API Sim
+    link(rel="stylesheet", href="style.css", type="text/css")
+  body
+    h3 Migration API Sim
+    ul
+      li
+        a(href="/latest") /latest
+      li
+        a(href="/latest/questions") /latest/questions
+      li
+        a(href="/latest/posts") /latest/posts
+
+    h4 Create Question
+    form(method="POST", action="/questions")
+      label Question
+      input(type="text", name="question")
+      label Language
+      select(name="language")
+        option(value="en") English
+        option(value="ne") Nepali
+        option(value="mai") Maithili
+      label Tags
+      input(type="text", name="tags")
+      input(type="submit", value="New Question")
+
+    h4 Create Post
+    form(method="POST", action="/posts")
+      label Title
+      input(type="text", name="title")
+      label Description
+      input(type="text", name="description")
+      select(name="type")
+        option text
+        option audio
+        option video
+      label Source
+      input(type="text", name="source", value="NRNA")
+      label Text Content
+      textarea(name="content")
+      label Media URL
+      input(type="text", name="media_url")
+      label Question
+      select(name="question_id")
+        option(value="") None
+        for question in questions
+          option(value=question._id) #{question.question}
+      label Language
+      select(name="language")
+        option(value="en") English
+        option(value="ne") Nepali
+        option(value="mai") Maithili
+      label Tags
+      input(type="text", name="tags")
+      input(type="submit", value="New Question")

@@ -1,0 +1,28 @@
+{
+  "name": "migration-api-sim",
+  "version": "1.0.0",
+  "description": "Simulated responses for NRNA App",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapmeld/migration-api-sim.git"
+  },
+  "author": "The Asia Foundation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mapmeld/migration-api-sim/issues"
+  },
+  "homepage": "https://github.com/mapmeld/migration-api-sim#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "compression": "^1.6.0",
+    "cookie-parser": "^1.4.0",
+    "crypto": "0.0.3",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mongoose": "^4.2.9"
+  }
+}
